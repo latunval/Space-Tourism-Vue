@@ -46,7 +46,7 @@ export default {
     }
   },
   async mounted() {
-        const response = await fetch('/src/assets/data.json')
+        const response = await fetch('/data.json')
     const data = await response.json()
     this.crew = data.crew
   },
