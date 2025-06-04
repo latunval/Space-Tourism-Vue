@@ -56,7 +56,7 @@ export default {
 .body {
     font-family:"Roboto", "Tagesschrift" !important;
 
-    background-image: url(/src/assets/technology/background-technology-desktop.jpg);
+    background-image: url(/assets/technology/background-technology-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,7 +135,7 @@ gap: 20px;
 
 @media screen and (max-width:1000px) {
         .body {
-    background-image: url(/src/assets/technology/background-technology-tablet.jpg);
+    background-image: url(/assets/technology/background-technology-tablet.jpg);
     /* color: red; */
   }
   
@@ -175,7 +175,7 @@ gap: 20px;
 
 @media screen and (max-width:510px) {
     .body {
-        background-image: url(/src/assets/technology/background-technology-mobile.jpg);
+        background-image: url(/assets/technology/background-technology-mobile.jpg);
         /* color: gold; */
         padding: 0 !important;
     }

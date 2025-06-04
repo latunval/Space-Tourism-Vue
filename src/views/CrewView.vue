@@ -63,7 +63,7 @@ export default {
 .body {
     font-family:"Roboto", "Tagesschrift" !important;
    
-     background-image: url(/src/assets/destination/background-destination-desktop.jpg);
+     background-image: url(/assets/crew/background-crew-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,7 +134,7 @@ export default {
 
 @media screen and (max-width:1000px) {
         .body {
-    background-image: url(/src/assets/crew/background-crew-tablet.jpg);
+    background-image: url(/assets/crew/background-crew-tablet.jpg);
   }
     
  
@@ -153,7 +153,7 @@ export default {
 
 @media screen and (max-width:510px) {
     .body {
-        background-image: url(/src/assets/crew/background-crew-mobile.jpg);
+        background-image: url(/assets/crew/background-crew-mobile.jpg);
         /* color: gold; */
         padding: 0;
     }

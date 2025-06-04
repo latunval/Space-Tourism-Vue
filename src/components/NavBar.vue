@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logoImg">
-      <img class="logo" src="../assets/shared/logo.svg" alt="logo" />
+      <img class="logo" src="/public/assets/shared/logo.svg" alt="logo" />
     </div>
     <nav class="nav d-flex">
       <li class="line"></li>
@@ -10,13 +10,13 @@
         class="ham" :class="{hams: !isMenuOpen}"
         @click="toggleMenu"
         v-show="!isMenuOpen"
-        src="../assets/shared/icon-hamburger.svg"
+        src="/public/assets/shared/icon-hamburger.svg"
         alt="hamburger icon"
       />
 
       <!-- Sliding Menu -->
       <div class=" side-menu" :class="{show: isMenuOpen}">
-        <img class="close" @click="toggleMenu" src="../assets/shared/icon-close.svg" alt="close icon" />
+        <img class="close" @click="toggleMenu" src="/public/assets/shared/icon-close.svg" alt="close icon" />
 
         <ul class="nav-bar">
           <li><router-link :to="{ name: 'home' }" exact-active-class="active">00 HOME</router-link></li>

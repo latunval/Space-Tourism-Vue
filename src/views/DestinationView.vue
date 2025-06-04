@@ -3,42 +3,43 @@
     <nav-bar />
     <section class="all">
       <h2><span class="num">01</span> Pick Your Destination</h2>
-    <div v-if="destination.length > 0">
-      <section class="moon"> 
-        <div class="moonDisplay">  
-<section class="img">
-     <img :src="currentPlanet.images.png" :alt="currentPlanet.name" />
-</section>
-<div class="moonDetails">
-      <div class=" moonNav">
-        <ul>
-        <li class="tabs"
-          v-for="(planet, index) in destination"
-          :key="planet.name"
-          @click="currentIndex = index"
-          :class="{ active: currentIndex === index }"
-        >
-          {{ planet.name }}
-        </li>
-        </ul>
-      </div>
-      
-        <h3>{{ currentPlanet.name }}</h3>
-        <p>{{ currentPlanet.description }}</p>
-        <section class="kilo">
-          <article>
-            <p class="avg">AVG. DISTANCE</p>
-            <h3 class="num">{{currentPlanet.distance}}</h3>
-          </article>
-          <article>
-            <p class="avg">EST. TRAVEL TIME</p>
-            <h3 class="days">{{currentPlanet.travel}}</h3>
-          </article>
+      <div v-if="destination.length > 0">
+        <section class="moon">
+          <div class="moonDisplay">
+            <section class="img">
+              <img :src="currentPlanet.images.png" :alt="currentPlanet.name" />
+            </section>
+            <div class="moonDetails">
+              <div class="moonNav">
+                <ul>
+                  <li
+                    class="tabs"
+                    v-for="(planet, index) in destination"
+                    :key="planet.name"
+                    @click="currentIndex = index"
+                    :class="{ active: currentIndex === index }"
+                  >
+                    {{ planet.name }}
+                  </li>
+                </ul>
+              </div>
+
+              <h3>{{ currentPlanet.name }}</h3>
+              <p>{{ currentPlanet.description }}</p>
+              <section class="kilo">
+                <article>
+                  <p class="avg">AVG. DISTANCE</p>
+                  <h3 class="num">{{ currentPlanet.distance }}</h3>
+                </article>
+                <article>
+                  <p class="avg">EST. TRAVEL TIME</p>
+                  <h3 class="days">{{ currentPlanet.travel }}</h3>
+                </article>
+              </section>
+            </div>
+          </div>
         </section>
       </div>
-      </div>
-      </section>
-    </div>
     </section>
   </div>
 </template>
@@ -71,7 +72,7 @@ export default {
 .body {
   font-family: 'Roboto', 'Tagesschrift' !important;
   color: #fff;
-  background-image: url(/src/assets/destination/background-destination-desktop.jpg);
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,8 +111,9 @@ export default {
   margin: 20px 0;
 }
 
-.tabs.active, .tabs:hover {
-  border-bottom: 3px solid  #fff;
+.tabs.active,
+.tabs:hover {
+  border-bottom: 3px solid #fff;
 }
 .all {
   width: 90%;
@@ -149,12 +151,12 @@ article {
   padding: 10px 0;
   cursor: pointer;
   list-style-type: none;
- color: #fff !important;
+  color: #fff !important;
 }
 
 @media screen and (max-width: 1050px) {
   .body {
-    background-image: url(/src/assets/destination/background-destination-tablet.jpg);
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
     /* color: red; */
   }
 
@@ -200,7 +202,7 @@ article {
 
 @media screen and (max-width: 510px) {
   .body {
-    background-image: url(/src/assets/destination/background-destination-mobile.jpg);
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
     /* color: gold; */
     padding: 0;
   }

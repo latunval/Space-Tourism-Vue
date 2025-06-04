@@ -40,7 +40,7 @@ li{
 .body {
   font-family: 'Roboto', 'Tagesschrift' !important;
 
-  background-image: url(/src/assets/home/background-home-desktop.jpg);
+  background-image: url(/assets/home/background-home-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +108,7 @@ a {
 
 @media screen and (min-width: 502px) and (max-width: 1050px) {
   .body {
-    background-image: url(/src/assets/home/background-home-tablet.jpg);
+    background-image: url(/assets/home/background-home-tablet.jpg);
     /* color: red; */
       /* width: %; */
       padding: 0 0 20px;
@@ -146,7 +146,7 @@ a {
 
 @media screen and (max-width: 500px) {
   .body {
-    background-image: url(/src/assets/home/background-home-mobile.jpg);
+    background-image: url(/assets/home/background-home-mobile.jpg);
     /* color: gold; */
     padding: 10px 5px 30px;
   }
